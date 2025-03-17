@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Typing effect
-    const occupations = [ "Backend Developer", "Creative Coder"];
+    const occupations = [ "Backend Trainee", "Creative Coder"];
     let occupationIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -140,9 +140,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const filter = this.getAttribute('data-filter');
             
             projectItems.forEach(item => {
-                const category = item.getAttribute('data-category');
+                const category = item.getAttribute('data-category').split(",");
                 
-                if (filter === 'all' || filter === category) {
+                if (category.includes(filter)) {
                     item.style.display = 'block';
                     setTimeout(() => {
                         item.style.opacity = '1';
