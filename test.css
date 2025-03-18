@@ -1033,19 +1033,21 @@ img {
     }
     
     .nav-menu {
-        position: fixed;
-        top: 79px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 79px);
-        background-color: var(--white);
-        flex-direction: column;
-        padding: 40px 0;
-        transition: var(--transition);
+       position: fixed;
+    top: 79px;
+    left: 100%;
+    width: 37%;
+    height: calc(100vh - 79px);
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 40px 0;
+    transition: var(--transition);
     }
     
     .nav-menu.active {
-        left: 0;
+      
+    right: 0px;
+    left: 59%;
     }
     
     .nav-menu li {
