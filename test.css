@@ -914,10 +914,17 @@ img {
 
 /* ----- Media Queries ----- */
 @media screen and (max-width: 992px) {
-    .hero-content {
-        flex-direction: column;
+   .hero-content {
+     
+        flex-direction: column-reverse;
+        gap: 40px;
     }
-    
+    .container {
+        padding-top: 20px;
+    }
+    .navbar{
+        padding: 0px;
+    }
     .hero-text {
         padding-right: 0;
         margin-bottom: 50px;
