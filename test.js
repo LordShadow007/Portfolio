@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Typing effect
-    const occupations = [ "Backend Trainee", "Creative Coder"];
+    const occupations = [ "Backend Developer", "Creative Coder"];
     let occupationIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(() => {
                         item.style.opacity = '1';
                         item.style.transform = 'scale(1)';
-                    }, 10);
+                    }, 300);
                 } else {
                     item.style.opacity = '0';
                     item.style.transform = 'scale(0.8)';
